@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-menu-item {
+    list-style-type: none;
+    margin: 0 10px;
+  }
+
+  .navbar-menu-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar-hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+
+    .navbar-hamburger {
+      display: block;
+    }
+
+    .navbar-menu.open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #555;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .navbar-menu-item {
+      margin: 10px 0;
+    }
+  }
